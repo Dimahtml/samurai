@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Circe;
+  src:
+    url('../fonts/Circe-Light.woff2') format('woff2'),
+    url('../fonts/Circe-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Circe;
+  src:
+    url('../fonts/Circe-Bold.woff2') format('woff2'),
+    url('../fonts/Circe-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Circe;
+  src:
+    url('../fonts/Circe-Regular.woff2') format('woff2'),
+    url('../fonts/Circe-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  font-family: Circe, Arial, sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  box-sizing: border-box;
+
+  width: 100%;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;     
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #309515;
+
+  font-size: 14px;
+  line-height: 24px;  
+
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #216e0d;
+  }
+
+  &:active {
+    background-color: #309515;
+  }
+
+  @media (min-width: $desktop-width) {
+    /*margin-top: 50px;*/
+    padding: 20px 50px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,12 @@
+.vacancy__header {
+  color: #000102;
+  font-size: 30px;
+}
+
+/*==========================================================*/
+
+@media (min-width: $desktop-width) {
+  .vacancy__header {
+    font-size: 48px;
+  }
+}

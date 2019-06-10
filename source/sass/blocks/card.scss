@@ -1,0 +1,115 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  width: calc(100% - 30px);
+  max-width: 350px;
+  flex-grow: 1;
+  min-height: 421px;
+
+  margin: 15px 15px 0 15px; 
+  padding: 30px 25px 25px 25px;
+
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+    margin-top: 20px;
+    width: calc(50% - 30px);
+    max-width: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+    padding: 50px 45px;
+
+    width: calc(33.3% - 30px);
+  }
+}
+
+.card__header {
+  margin: auto 0 20px 0;
+
+  font-size: 22px;
+  line-height: 1.2em;
+  color: #000102;
+}
+
+.card__text {
+  margin: 0 0 8px 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+}
+
+.card__text-wrapper {
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+
+.card__bold {
+  color: #2e2e2e;
+}
+
+.card__avatar {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 25px auto; 
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50%;
+  border-radius: 50%;
+}
+
+.card__avatar--chef {
+  background-image: url("../img/chef.png");
+}
+
+.card__avatar--courier {
+  background-image: url("../img/delivery-truck.png");
+}
+
+.card__avatar--manager {
+  background-image: url("../img/id-card.png");
+}
+
+.card__avatar--operator {
+  background-image: url("../img/headphone.png");
+}
+
+.card__avatar--waiter {
+  background-image: url("../img/room-service.png");
+}
+
+.card__btn {
+  align-self: center;
+}
+
+/*======================================================*/
+
+@media (min-width: $desktop-width) {
+  .card__header {
+    margin-bottom: 20px;
+
+    font-size: 26px;
+  }
+
+  .card__text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .card__avatar {
+    margin-bottom: 45px;
+
+    width: 200px;
+    height: 200px;
+  }
+}
+

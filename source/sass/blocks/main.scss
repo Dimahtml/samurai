@@ -1,0 +1,60 @@
+.main {
+  background-image: url("../img/pattern-2.png");
+}
+
+.main__wrapper {
+  padding: 15px 15px 42px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main__container {
+  padding: 20px 0;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.main__back-link {
+  position: relative;
+  padding-left: 30px;
+
+  text-decoration: none;
+  color: #e94a42;
+  font-size: 14px;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    top: 4px;
+    left: 10px;
+
+    width: 10px;
+    height: 16px;
+    background-image: url("../img/arrow-point-to-right.png");
+  }
+}
+
+/*======================================================*/
+
+@media (min-width: $tablet-width) {
+  .main__container {
+    padding: 45px 30px 50px 30px;
+  }
+}
+
+/*======================================================*/
+
+@media (min-width: $desktop-width) {
+  .main__wrapper {
+    padding: 60px 15px 100px 15px;
+  }
+
+  .main__container {
+    padding: 55px 60px 60px 60px;
+  }
+
+  .main__back-link {
+    font-size: 18px;
+  }
+}
