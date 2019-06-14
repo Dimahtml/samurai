@@ -1,12 +1,168 @@
+.vacancy {
+  color: #2e2e2e;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .vacancy__header {
+  margin: 0;
+  margin-bottom: 25px;
+
   color: #000102;
   font-size: 30px;
+}
+
+.vacancy__text {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.vacancy__text--small {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.vacancy__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.vacancy__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 25px;
+}
+
+.vacancy__item {
+  position: relative;
+
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+.vacancy__item::before {
+  position: absolute;
+  content: "";
+
+  top: 2px;
+  left: 0;
+
+  width: 15px;
+  height: 12px;
+  background-image: url("../img/checked.png");
+}
+
+.vacancy__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.vacancy__contacts-mail {
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 20px;
+
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.vacancy__contacts-mail-text {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.vacancy__avatar {
+  margin-bottom: 20px;
+
+  width: 60px;
+  height: 60px;
+}
+
+.vacancy__avatar--cook {
+  background-image: url("../img/email-2.png");
+}
+
+.vacancy__email-address {
+  color: #e94a42;
+  font-size: 18px;
 }
 
 /*==========================================================*/
 
 @media (min-width: $desktop-width) {
+  .vacancy {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
   .vacancy__header {
+    margin-bottom: 45px;
+
     font-size: 48px;
+  }
+
+  .vacancy__text {
+    margin-bottom: 55px;
+  }
+
+  .vacancy__text--small {
+    margin-bottom: 20px;
+  }
+
+  .vacancy__text--last {
+    margin: 0;
+  }
+
+  .vacancy__subtitle {
+    margin-bottom: 44px;
+
+    font-size: 36px;
+    line-height: 1.2em;
+  }
+
+  .vacancy__list {
+    margin-bottom: 55px;
+  }
+
+  .vacancy__contacts {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .vacancy__contacts-text {
+    width: 48%;
+  }
+
+  .vacancy__contacts-mail {
+    flex-direction: row;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 40%;
+    padding: 40px;
+  }
+
+  .vacancy__contacts-mail-inner {
+    text-align: left;
+  }  
+
+  .vacancy__avatar {
+    margin: 0;
+    margin-right: 40px;
+
+    width: 100px;
+    height: 100px;
+  }
+
+  .vacancy__email-address {
+    color: #e94a42;
+    font-size: 24px;
   }
 }

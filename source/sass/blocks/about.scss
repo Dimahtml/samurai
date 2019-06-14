@@ -1,0 +1,94 @@
+.about__container {
+  padding: 15px;
+}
+
+.about__text {
+  margin: 15px 0 0 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #2e2e2e;
+}
+
+.about__text--top {
+  margin: 0;
+}
+
+.about__header {
+  margin: 30px 0 0 0;
+
+  font-size: 30px;
+  colot: #000102;
+}
+
+.about__rules-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+}
+
+.about__social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__rules-title {
+  margin: 20px 0 0 0;
+
+  font-size: 20px;
+  color: #000000;
+}
+
+.about__contacts-name {
+  margin: 25px 0 0 0;
+}
+
+.about__contacts-tel {
+  font-size: 24px;
+  color: #e94a42;
+}
+
+/*==========================================================*/
+
+@media (min-width: $desktop-width) {
+  .about__container {
+    padding: 60px;
+  }
+
+  .about__text {
+    margin-top: 20px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .about__header {
+    margin-top: 55px;
+    font-size: 48px;
+  }
+
+  .about__rules-title {
+    margin-top: 60px;
+    font-size: 24px;
+  }
+
+  .about__contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__contacts-name {
+    margin-top: 55px;
+  }
+
+  .about__contacts-tel {
+    font-size: 30px;
+  }
+}

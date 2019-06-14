@@ -1,0 +1,71 @@
+.page-404__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 25px;
+  min-height: 580px;
+
+  text-align: center;
+
+  background-image: url("../img/404-small.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.page-404__header {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000102;
+}
+
+.page-404__text {
+  margin: 0;
+  margin-top: 20px;
+
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.page-404__button {
+  align-self: center;
+  margin-top: 35px;
+}
+
+/*==========================================================*/
+
+@media (min-width: $desktop-width) {
+  .page-404__container {
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 100px;
+    min-height: 800px;
+
+    background-image: url("../img/404.png");
+    background-position: right top;
+  }
+
+  .page-404__inner {
+    width: 520px;
+    text-align: left;
+  }
+
+  .page-404__header {
+    font-size: 48px;
+  }
+
+  .page-404__text {
+    margin-top: 50px;
+
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .page-404__button {
+    align-self: flex-start;
+    margin-top: 95px;
+  }
+}
